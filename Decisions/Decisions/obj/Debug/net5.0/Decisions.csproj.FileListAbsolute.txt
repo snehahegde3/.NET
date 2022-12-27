@@ -1,0 +1,16 @@
+D:\C#\Decisions\Decisions\bin\Debug\net5.0\Decisions.exe
+D:\C#\Decisions\Decisions\bin\Debug\net5.0\Decisions.deps.json
+D:\C#\Decisions\Decisions\bin\Debug\net5.0\Decisions.runtimeconfig.json
+D:\C#\Decisions\Decisions\bin\Debug\net5.0\Decisions.runtimeconfig.dev.json
+D:\C#\Decisions\Decisions\bin\Debug\net5.0\Decisions.dll
+D:\C#\Decisions\Decisions\bin\Debug\net5.0\Decisions.pdb
+D:\C#\Decisions\Decisions\obj\Debug\net5.0\Decisions.csproj.AssemblyReference.cache
+D:\C#\Decisions\Decisions\obj\Debug\net5.0\Decisions.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Decisions\Decisions\obj\Debug\net5.0\Decisions.AssemblyInfoInputs.cache
+D:\C#\Decisions\Decisions\obj\Debug\net5.0\Decisions.AssemblyInfo.cs
+D:\C#\Decisions\Decisions\obj\Debug\net5.0\Decisions.csproj.CoreCompileInputs.cache
+D:\C#\Decisions\Decisions\obj\Debug\net5.0\Decisions.dll
+D:\C#\Decisions\Decisions\obj\Debug\net5.0\refint\Decisions.dll
+D:\C#\Decisions\Decisions\obj\Debug\net5.0\Decisions.pdb
+D:\C#\Decisions\Decisions\obj\Debug\net5.0\Decisions.genruntimeconfig.cache
+D:\C#\Decisions\Decisions\obj\Debug\net5.0\ref\Decisions.dll
