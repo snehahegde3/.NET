@@ -12,6 +12,10 @@ namespace Params
             Console.WriteLine();
             int[] arr = new int[] { 1, 3, 4 };
             ParamsStuff(1, 3, 5, '%', "okkkee0", arr);
+            Console.WriteLine();
+            int[] res = new int[2];
+            res = MinMax(1, 6, 4, -6, 7, 3, 56, 3, 6, 2, 6, 8, 0, -6, -6, -7, -8, -13, 6, 56, 76, 34, 65, 36, 76);
+            Console.WriteLine($"min: {res[0]}, max: {res[1]}");
         }
 
         public static void ParamsMethod(params string[] sentence)
@@ -32,6 +36,23 @@ namespace Params
             {
                 Console.Write(obj + " ");
             }
+        }
+
+        public static int[] MinMax(params int[] numbers)
+        {
+            int[] minmax = new int[] { int.MaxValue, int.MinValue };
+            foreach(int i in numbers)
+            {
+                if (i < minmax[0])
+                {
+                    minmax[0] = i;
+                }
+                if(i > minmax[1])
+                {
+                    minmax[1] = i;
+                }
+            }
+            return minmax;
         }
     }
 }
