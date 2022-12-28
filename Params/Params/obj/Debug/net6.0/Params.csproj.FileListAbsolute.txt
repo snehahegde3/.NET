@@ -1,0 +1,15 @@
+D:\C#\Params\Params\bin\Debug\net6.0\Params.exe
+D:\C#\Params\Params\bin\Debug\net6.0\Params.deps.json
+D:\C#\Params\Params\bin\Debug\net6.0\Params.runtimeconfig.json
+D:\C#\Params\Params\bin\Debug\net6.0\Params.dll
+D:\C#\Params\Params\obj\Debug\net6.0\Params.csproj.AssemblyReference.cache
+D:\C#\Params\Params\obj\Debug\net6.0\Params.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Params\Params\obj\Debug\net6.0\Params.AssemblyInfoInputs.cache
+D:\C#\Params\Params\obj\Debug\net6.0\Params.AssemblyInfo.cs
+D:\C#\Params\Params\obj\Debug\net6.0\Params.csproj.CoreCompileInputs.cache
+D:\C#\Params\Params\obj\Debug\net6.0\Params.dll
+D:\C#\Params\Params\obj\Debug\net6.0\refint\Params.dll
+D:\C#\Params\Params\obj\Debug\net6.0\Params.pdb
+D:\C#\Params\Params\obj\Debug\net6.0\Params.genruntimeconfig.cache
+D:\C#\Params\Params\obj\Debug\net6.0\ref\Params.dll
+D:\C#\Params\Params\bin\Debug\net6.0\Params.pdb
