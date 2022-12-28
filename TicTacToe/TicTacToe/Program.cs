@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Threading;
 
 namespace TicTacToe
 {
@@ -25,7 +26,7 @@ namespace TicTacToe
                 SetBoard();
                 Console.Write("Select X or O: ");
                 temp = Console.ReadLine();
-                if (temp == "O")
+                if (temp == "O" || temp == "o")
                 {
                     Console.WriteLine("Selected O");
                     player = 'O';
@@ -60,15 +61,7 @@ namespace TicTacToe
                 player = player == 'X' ? 'O' : 'X';
                 Console.WriteLine($"Player {player} winss!!!");
                 Console.ForegroundColor = ConsoleColor.White;
-                int count = 1;
-                for (int i = 0; i < board.GetLength(0); i++)
-                {
-                    for (int j = 0; j < board.GetLength(1); j++)
-                    {
-                        board[i, j] = count.ToString()[0];
-                        count++;
-                    }
-                }
+                Reset();
                 Console.ReadKey();
                 Console.WriteLine("Press 1 to play again");
                 string game = Console.ReadLine();
@@ -276,6 +269,19 @@ namespace TicTacToe
             Console.WriteLine("     |     |     ");
             Console.WriteLine($"  {board[2, 0]}  |  {board[2, 1]}  |  {board[2, 2]}  ");
             Console.WriteLine("     |     |     ");
+        }
+
+        public static void Reset()
+        {
+            int count = 1;
+            for (int i = 0; i < board.GetLength(0); i++)
+            {
+                for (int j = 0; j < board.GetLength(1); j++)
+                {
+                    board[i, j] = count.ToString()[0];
+                    count++;
+                }
+            }
         }
     }
 }
