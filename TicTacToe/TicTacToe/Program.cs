@@ -17,6 +17,7 @@ namespace TicTacToe
         {
             do {
                 Console.Clear();
+                
                 char player = 'X';
                 string temp;
                 bool isCorrectInput = true;
@@ -54,13 +55,25 @@ namespace TicTacToe
                     player = Mark(player, input);
                     Console.Clear();
                     SetBoard();
-                    gameOn = !Win();
+                    gameOn = !Win() && !Draw();
 
                 } while (gameOn);
-                Console.ForegroundColor = ConsoleColor.Green;
-                player = player == 'X' ? 'O' : 'X';
-                Console.WriteLine($"Player {player} winss!!!");
-                Console.ForegroundColor = ConsoleColor.White;
+                if (Draw())
+                {
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.Beep();
+                    Console.WriteLine($"Tis a draw!!");
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Beep();
+                    player = player == 'X' ? 'O' : 'X';
+                    Console.WriteLine($"Player {player} winss!!!");
+                    Console.ForegroundColor = ConsoleColor.White;
+
+                }
                 Reset();
                 Console.ReadKey();
                 Console.WriteLine("Press 1 to play again");
@@ -282,6 +295,21 @@ namespace TicTacToe
                     count++;
                 }
             }
+        }
+
+        public static bool Draw()
+        {
+            for(int i = 0; i < board.GetLength(0); i++)
+            {
+                for(int j = 0; j < board.GetLength(1); j++)
+                {
+                    if (board[i, j]!= 'X' && board[i, j] != 'O')
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
         }
     }
 }

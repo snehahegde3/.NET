@@ -24,99 +24,101 @@ namespace First
         static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.Blue;
-            //Console.WriteLine("hello world!");
-            //Console.WriteLine("it me yaamariyoo");
+            Console.BackgroundColor= ConsoleColor.Green;
+            Console.WriteLine("hello world!");
+            Console.WriteLine("it me yaamariyoo");
 
-            //int num1 = 10, num2;
-            //num2 = 20;
-            //int sum = num1 + num2;
+            int num1 = 10, num2;
+            num2 = 20;
+            int sum = num1 + num2;
 
-            ////converts the int to str by itself 
-            //Console.WriteLine("num1: " + num1 + " num2: " + num2 + " sum: " + sum);
+            //converts the int to str by itself 
+            Console.WriteLine("num1: " + num1 + " num2: " + num2 + " sum: " + sum);
 
-            //double pi = 3.1415;
-            //double d1 = 5.1;
-            //Console.WriteLine("pi/d1: " + pi / d1);
+            double pi = 3.1415;
+            double d1 = 5.1;
+            Console.WriteLine("pi/d1: " + pi / d1);
 
-            ////for floats, we _need_ to add f at the end 
-            ////theyre rounded off 
-            //float pif = 3.1415f;
-            //Console.WriteLine(pi / pif);
+            //for floats, we _need_ to add f at the end 
+            //theyre rounded off 
+            float pif = 3.1415f;
+            Console.WriteLine(pi / pif);
 
-            //Console.Clear();
+            Console.Clear();
 
-            ////stringzz
-            //string name = "Sne";
-            //string message = name + " hellos";
+            //stringzz
+            string name = "Sne";
+            string message = name + " hellos";
 
-            //Console.WriteLine(message.ToUpper().Length);
-
-            ////int and booleans are examples of primitive datatypes 
-            ////whereas strings are not prmitive, they are classes that have their own attributes and methods
-
-            ////withoutnewline  
-            ////Console.Write() does not add newline at the end 
-            ////unlike Console.WriteLine()
-            //Console.Write(name);
-            //Console.WriteLine(" no new line");
-            //Console.WriteLine("new line");
-
-            ////keeps it open  
-            ////waits for some input
-
-            ////ascii value or single character
-            ////Console.ReadKey();
-
-            ////string 
-            ////Console.ReadLine();
-
-            //string new_name = Console.ReadLine();
+            Console.WriteLine(message.ToUpper().Length);
 
 
+            //int and booleans are examples of primitive datatypes 
+            //whereas strings are not prmitive, they are classes that have their own attributes and methods
 
-            //string age = Console.ReadLine();
-            ////age is in ascii 
-            //// index in {} of the variable  
-            //Console.WriteLine("My new names {0} and I am {1} years old", new_name, (int.Parse(age)));
+            //withoutnewline  
+            //Console.Write() does not add newline at the end 
+            //unlike Console.WriteLine()
+            Console.Write(name);
+            Console.WriteLine(" no new line");
+            Console.WriteLine("new line");
 
-            //Console.Beep();
+            //keeps it open  
+            //waits for some input
 
-            //Console.Clear();
+            //ascii value or single character
+            //Console.ReadKey();
 
-            ////conversions
-            ////explicit conversion 
-            //float f1 = 31.45f;
-            //int i1 = (int)f1;
-            //Console.WriteLine(i1);
+            //string 
+            //Console.ReadLine();
 
-            ////implicit conversion 
-            //float f2 = 343.43f;
-            //double d2 = f2;
-            //Console.WriteLine(d2);
-
-            ////type conversion 
-            //int i2 = 6789;
-            //string s1 = i2.ToString();
-            //Console.WriteLine(s1);
-            //bool sun = true;
-            //string sun_ = sun.ToString();
-            //Console.WriteLine(sun_);
+            string new_name = Console.ReadLine();
 
 
-            ////string to integer 
-            //string s2 = "123", s3 = "453";
-            //int i3 = Int32.Parse(s2) + Int32.Parse(s3); ;
-            //Console.WriteLine(i3);
+
+            string age = Console.ReadLine();
+            //age is in ascii 
+            // index in {} of the variable  
+            Console.WriteLine("My new names {0} and I am {1} years old", new_name, (int.Parse(age)));
+
+            Console.Beep();
+
+            Console.Clear();
+
+            //conversions
+            //explicit conversion 
+            float f1 = 31.45f;
+            int i1 = (int)f1;
+            Console.WriteLine(i1);
+
+            //implicit conversion 
+            float f2 = 343.43f;
+            double d2 = f2;
+            Console.WriteLine(d2);
+
+            //type conversion 
+            int i2 = 6789;
+            string s1 = i2.ToString();
+            Console.WriteLine(s1);
+            bool sun = true;
+            string sun_ = sun.ToString();
+            Console.WriteLine(sun_);
 
 
-            ////assignment 
-            //string stringForFloat = "0.85"; // datatype should be float
-            //string stringForInt = "12345"; // datatype should be int
-            //float f3 = float.Parse(stringForFloat);
-            //int i4 = int.Parse(stringForInt);
-            //Console.WriteLine("{0} {1}", f3, i4);
+            //string to integer 
+            string s2 = "123", s3 = "453";
+            int i3 = Int32.Parse(s2) + Int32.Parse(s3); ;
+            Console.WriteLine(i3);
 
-            //Console.Clear();
+
+            //assignment 
+            string stringForFloat = "0.85"; // datatype should be float
+            string stringForInt = "12345"; // datatype should be int
+            float f3 = float.Parse(stringForFloat);
+            int i4 = int.Parse(stringForInt);
+            Console.WriteLine("{0} {1}", f3, i4);
+
+            Console.Clear();
 
 
             ////String manipulation 
