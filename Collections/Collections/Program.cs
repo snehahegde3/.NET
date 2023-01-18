@@ -213,6 +213,8 @@ namespace Collections
             {
                 employeeDictionary.Add(employee.Role, employee);
             }
+
+
             foreach(var i in employeeDictionary)
             {
                 Console.WriteLine($"{i.Value.Rate}, {i.Key}, {i.Value.Name}");
@@ -237,7 +239,13 @@ namespace Collections
             //2nd element in the dictionary that is a key-value pair
 
 
+            //Remove returns a boolean whether it was successful or not
+            employeeDictionary.Remove(entryCTO.Key);
 
+            foreach (var i in employeeDictionary)
+            {
+                Console.WriteLine($"{i.Value.Rate}, {i.Key}, {i.Value.Name}");
+            }
         }
     }
 
