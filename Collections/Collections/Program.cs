@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Security.Cryptography;
 
 namespace Collections
@@ -216,6 +217,25 @@ namespace Collections
             {
                 Console.WriteLine($"{i.Value.Rate}, {i.Key}, {i.Value.Name}");
             }
+
+
+            Employee CEO = null;
+            //TryGetValue checks if there is a value, returns a bool like TryParse
+            if(employeeDictionary.TryGetValue("CTO", out CEO))
+            {
+                Console.WriteLine("CEO found" + " " + CEO.Name);
+            }
+            else
+            {
+                Console.WriteLine("were in need of a CEO. Please apply");
+            }
+
+            //can use ElementAt when using a for loop 
+
+
+            KeyValuePair<string, Employee> entryCTO = employeeDictionary.ElementAt(1);
+            //2nd element in the dictionary that is a key-value pair
+
 
 
         }
