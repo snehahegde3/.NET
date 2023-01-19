@@ -370,7 +370,7 @@ namespace Collections
             var new_q = RecievedOrders();
             foreach(var i in new_q)
             {
-                Console.WriteLine($"{i.ID}, {i.Amount}");
+                Console.WriteLine($"{i.ID}, {i.Amount} processed!");
             }
 
             static Queue<Order> RecievedOrders()
