@@ -15,6 +15,8 @@ namespace Collections
             Lists();
             HashTables();
             Dictionaries();
+            Stack();
+            Queue();
             Console.ReadKey();
         }
 
@@ -76,6 +78,18 @@ namespace Collections
                 this.Name = name;
                 this.Age = age;
                 this.Rate = rate;
+            }
+        }
+
+        class Order
+        {
+            public int ID { get; set; }
+            public long Amount { get; set; }
+
+            public Order(int id, long amount)
+            {
+                this.ID=id;
+                this.Amount = amount;
             }
         }
 
@@ -246,6 +260,129 @@ namespace Collections
             {
                 Console.WriteLine($"{i.Value.Rate}, {i.Key}, {i.Value.Name}");
             }
+
+            Console.WriteLine();
+        }
+
+        public static void Stack()
+        {
+            //LIFO
+
+            //web browser back button 
+            //reversing data
+            //undo/redo 
+
+            //Push(Object), Object Pop(), Object Peek() //(only top)
+
+            //Generic
+
+            Stack<int> stak = new Stack<int>();
+
+            stak.Push(1);
+            stak.Push(2); 
+            stak.Push(3);   
+            Console.WriteLine(stak.Peek()); 
+            foreach(int i in stak)
+            {
+                Console.Write(i + " ");
+            }
+
+            Console.WriteLine(); 
+            if (stak.Count > 0)
+            {
+                int temp = stak.Pop();
+                Console.Write(temp + " ");
+            }
+            Console.WriteLine();
+
+            foreach (int i in stak)
+            {
+                Console.Write(i+" ");
+            }
+            Console.WriteLine();
+
+
+            while(stak.Count > 0)
+            {
+                stak.Pop();
+            }
+            Console.WriteLine(stak.Count);
+
+            reverse();
+
+            static void reverse()
+            {
+                int[] new_arr = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9 };
+                Stack<int> stack = new Stack<int>();
+                foreach(var i in new_arr)
+                {
+                    stack.Push(i);
+                }
+
+                while(stack.Count>0)
+                {
+                    Console.Write($"{stack.Pop()} ");
+                }
+
+                Console.WriteLine();
+
+            } 
+        }
+
+
+
+        public static void Queue()
+        {
+            //FIFO
+
+            //IO requests
+            //Web requests
+            //Video games 
+
+            //Enqueue(Object), Object Dequeue(), Object Peek()
+
+            //Generic
+
+            Queue<int> queue = new Queue<int>();
+            queue.Enqueue(1);
+            queue.Enqueue(2);
+            queue.Enqueue(3);
+            queue.Enqueue(4);
+            queue.Enqueue(5);
+            foreach(var i in queue)
+            {
+                Console.Write(i + " ");
+            }
+
+            Console.WriteLine();
+
+            Console.WriteLine(queue.Dequeue());
+            queue.Dequeue();
+
+            foreach(var i in queue)
+            {
+                Console.WriteLine(i + " " + queue.Count + " ");
+            }
+
+            Console.WriteLine();
+
+
+            var new_q = RecievedOrders();
+            foreach(var i in new_q)
+            {
+                Console.WriteLine($"{i.ID}, {i.Amount}");
+            }
+
+            static Queue<Order> RecievedOrders()
+            {
+                Queue<Order> order_q = new Queue<Order>();
+                order_q.Enqueue(new Order(1, 10));
+                order_q.Enqueue(new Order(2, 20));
+                order_q.Enqueue(new Order(3, 20));
+                return order_q;
+            }
+            
+
         }
     }
 
