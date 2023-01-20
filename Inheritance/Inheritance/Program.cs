@@ -2,7 +2,8 @@
 
 namespace Inheritance
 {
-    internal class Program
+    //Internally every Class we create inherits from the Object class
+    internal class Program //: Object
     {
         //defines a class interms of another class 
 
@@ -14,9 +15,30 @@ namespace Inheritance
               Derived Class
         */
 
+        /* In this case, 
+         *              Electrical Device
+         *                      |
+         *                      V
+         *           -----------------------
+         *           |                     |
+         *           V                     V
+         *         Radio                  T V
+        */
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Radio new_radio = new Radio(false, "Sony");
+            // method from base class
+            new_radio.SwitchOn();
+            // method from child class
+            new_radio.ListenRadio();
+
+            TV new_TV = new TV(true, "Panasonic");
+            new_TV.SwitchOff();
+            new_TV.WatchTV();
+            
         }
+
+        
     }
 }
