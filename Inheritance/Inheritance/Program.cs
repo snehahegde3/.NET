@@ -36,7 +36,10 @@ namespace Inheritance
             TV new_TV = new TV(true, "Panasonic");
             new_TV.SwitchOff();
             new_TV.WatchTV();
-            
+
+            Dog dog = new Dog("Meek", 12);
+            dog.Play();
+            dog.Eat();
         }
 
         
