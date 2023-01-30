@@ -14,6 +14,7 @@ namespace Inheritance
         public Animal(string name, int age) { 
             this.Name = name;
             this.Age = age;
+            this.IsHungry = true;
         }
 
         //will be overridden by child classes 

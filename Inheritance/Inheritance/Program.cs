@@ -40,6 +40,15 @@ namespace Inheritance
             Dog dog = new Dog("Meek", 12);
             dog.Play();
             dog.Eat();
+
+            Post newPost = new Post("Happy birthday", true, "sne");
+            Console.WriteLine(newPost.ToString());
+
+            ImagePost newImgPost = new ImagePost("Dotdot in all her glory", "dotie", "http://dotdot/images/kyooti.png", true);
+            Console.WriteLine(newImgPost.ToString());
+
+            VideoPost newVideoPost = new VideoPost("http://dotdot/videos", 30, "New dotdot video", true, "sne");
+            Console.WriteLine(newVideoPost.ToString());
         }
 
         
