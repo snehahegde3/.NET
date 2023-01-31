@@ -1,0 +1,16 @@
+D:\C#\Inheritance - Challenge\Inheritance - Challenge\bin\Debug\net5.0\Inheritance - Challenge.exe
+D:\C#\Inheritance - Challenge\Inheritance - Challenge\bin\Debug\net5.0\Inheritance - Challenge.deps.json
+D:\C#\Inheritance - Challenge\Inheritance - Challenge\bin\Debug\net5.0\Inheritance - Challenge.runtimeconfig.json
+D:\C#\Inheritance - Challenge\Inheritance - Challenge\bin\Debug\net5.0\Inheritance - Challenge.runtimeconfig.dev.json
+D:\C#\Inheritance - Challenge\Inheritance - Challenge\bin\Debug\net5.0\Inheritance - Challenge.dll
+D:\C#\Inheritance - Challenge\Inheritance - Challenge\bin\Debug\net5.0\Inheritance - Challenge.pdb
+D:\C#\Inheritance - Challenge\Inheritance - Challenge\obj\Debug\net5.0\Inheritance - Challenge.csproj.AssemblyReference.cache
+D:\C#\Inheritance - Challenge\Inheritance - Challenge\obj\Debug\net5.0\Inheritance - Challenge.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Inheritance - Challenge\Inheritance - Challenge\obj\Debug\net5.0\Inheritance - Challenge.AssemblyInfoInputs.cache
+D:\C#\Inheritance - Challenge\Inheritance - Challenge\obj\Debug\net5.0\Inheritance - Challenge.AssemblyInfo.cs
+D:\C#\Inheritance - Challenge\Inheritance - Challenge\obj\Debug\net5.0\Inheritance - Challenge.csproj.CoreCompileInputs.cache
+D:\C#\Inheritance - Challenge\Inheritance - Challenge\obj\Debug\net5.0\Inheritance - Challenge.dll
+D:\C#\Inheritance - Challenge\Inheritance - Challenge\obj\Debug\net5.0\refint\Inheritance - Challenge.dll
+D:\C#\Inheritance - Challenge\Inheritance - Challenge\obj\Debug\net5.0\Inheritance - Challenge.pdb
+D:\C#\Inheritance - Challenge\Inheritance - Challenge\obj\Debug\net5.0\Inheritance - Challenge.genruntimeconfig.cache
+D:\C#\Inheritance - Challenge\Inheritance - Challenge\obj\Debug\net5.0\ref\Inheritance - Challenge.dll
