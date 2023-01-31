@@ -47,8 +47,12 @@ namespace Inheritance
             ImagePost newImgPost = new ImagePost("Dotdot in all her glory", "dotie", "http://dotdot/images/kyooti.png", true);
             Console.WriteLine(newImgPost.ToString());
 
-            VideoPost newVideoPost = new VideoPost("http://dotdot/videos", 30, "New dotdot video", true, "sne");
+            VideoPost newVideoPost = new VideoPost("http://dotdot/videos", 10, "New dotdot video", true, "sne");
             Console.WriteLine(newVideoPost.ToString());
+            newVideoPost.Play();
+            Console.WriteLine("Press any key to stop the video");
+            Console.ReadKey();
+            newVideoPost.Stop();
         }
 
         
