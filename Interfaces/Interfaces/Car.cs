@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    internal class Car: Vehicle, IDestroyable
+    internal class Car : Vehicle, IDestroyable
     {
         // the destroy method needs to be included to be able to use the IDestroyable interface 
 
@@ -26,7 +26,8 @@ namespace Interfaces
         // we can only access the properties and methods in this interface 
 
         public List<IDestroyable> DestroyablesNearby;
-        public Car(float speed, string color):base(speed, color) {
+        public Car(float speed, string color) : base(speed, color)
+        {
             DestructionSound = "CarExlosionSound.mp3";
             DestroyablesNearby = new List<IDestroyable>();
         }
@@ -37,10 +38,11 @@ namespace Interfaces
             Console.WriteLine("Theres a fire. Run ");
 
             // going through every destroyable object nearby and destoying it 
-            foreach(IDestroyable destroyable in DestroyablesNearby)
+            foreach (IDestroyable destroyable in DestroyablesNearby)
             {
                 destroyable.Destroy();
             }
 
+        }
     }
 }
