@@ -14,14 +14,19 @@ namespace Interfaces
         static public void PreDefinedInterfaces()
         {
             Console.WriteLine("Pre defined");
+
             Ticket t1 = new Ticket(10);
             Ticket t2 = new Ticket(10);
+
             Console.WriteLine(t2.Equals(t1));
+
+            Console.WriteLine();
         }
 
         static public void UserDefinedInterfaces()
         {
             Console.WriteLine("User defined");
+
             Chair officeChair = new Chair("Brown", "Plastic");
             Chair gamingChair = new Chair("Red", "Wood");
 
@@ -32,6 +37,16 @@ namespace Interfaces
             damagedCar.DestroyablesNearby.Add(gamingChair);
 
             damagedCar.Destroy();
+
+            Console.WriteLine();
+        }
+
+        static public void EnumeratorsAndEnumerables()
+        {
+            Console.WriteLine("IEnumerator");
+            // IEnumerable <T> is used for generic collections
+            // IEnumerator is used for non generic collections 
+
         }
     }
 }
