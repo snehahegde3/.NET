@@ -8,6 +8,7 @@ namespace Interfaces
         {
             PreDefinedInterfaces();
             UserDefinedInterfaces();
+            EnumeratorsAndEnumerables();
             
         }
 
@@ -45,7 +46,31 @@ namespace Interfaces
         {
             Console.WriteLine("IEnumerator");
             // IEnumerable <T> is used for generic collections
-            // IEnumerator is used for non generic collections 
+            // IEnumerable is used for non generic collections 
+
+            DogShelter shelter = new DogShelter(); 
+
+            foreach(Dog dogi in shelter)
+            {
+                // this alone gives an error that says 
+                // foreach statement cannot operate on variables of type 'type1' because 'type2' does not contain a public definition for 'identifier'
+                // so we need to use the IEnumerable interface on DogShelter
+
+                if (!dogi.IsNaughtyDog)
+                {
+                    dogi.Givetreat(2);
+                }
+                else
+                {
+                    dogi.Givetreat(1);
+                }
+            }
+
+            // when to use? 
+            // when we have a massive database table 
+            // you dont want to copy the enire thing into memory causing performance issues
+            // when not recommended to use IEnumerable interface: 
+            // when we need the results right away
 
         }
     }
