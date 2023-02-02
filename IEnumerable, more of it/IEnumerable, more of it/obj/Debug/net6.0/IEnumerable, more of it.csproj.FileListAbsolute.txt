@@ -1,0 +1,15 @@
+D:\C#\IEnumerable, more of it\IEnumerable, more of it\bin\Debug\net6.0\IEnumerable, more of it.exe
+D:\C#\IEnumerable, more of it\IEnumerable, more of it\bin\Debug\net6.0\IEnumerable, more of it.deps.json
+D:\C#\IEnumerable, more of it\IEnumerable, more of it\bin\Debug\net6.0\IEnumerable, more of it.runtimeconfig.json
+D:\C#\IEnumerable, more of it\IEnumerable, more of it\bin\Debug\net6.0\IEnumerable, more of it.dll
+D:\C#\IEnumerable, more of it\IEnumerable, more of it\bin\Debug\net6.0\IEnumerable, more of it.pdb
+D:\C#\IEnumerable, more of it\IEnumerable, more of it\obj\Debug\net6.0\IEnumerable, more of it.csproj.AssemblyReference.cache
+D:\C#\IEnumerable, more of it\IEnumerable, more of it\obj\Debug\net6.0\IEnumerable, more of it.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\IEnumerable, more of it\IEnumerable, more of it\obj\Debug\net6.0\IEnumerable, more of it.AssemblyInfoInputs.cache
+D:\C#\IEnumerable, more of it\IEnumerable, more of it\obj\Debug\net6.0\IEnumerable, more of it.AssemblyInfo.cs
+D:\C#\IEnumerable, more of it\IEnumerable, more of it\obj\Debug\net6.0\IEnumerable, more of it.csproj.CoreCompileInputs.cache
+D:\C#\IEnumerable, more of it\IEnumerable, more of it\obj\Debug\net6.0\IEnumerable, more of it.dll
+D:\C#\IEnumerable, more of it\IEnumerable, more of it\obj\Debug\net6.0\refint\IEnumerable, more of it.dll
+D:\C#\IEnumerable, more of it\IEnumerable, more of it\obj\Debug\net6.0\IEnumerable, more of it.pdb
+D:\C#\IEnumerable, more of it\IEnumerable, more of it\obj\Debug\net6.0\IEnumerable, more of it.genruntimeconfig.cache
+D:\C#\IEnumerable, more of it\IEnumerable, more of it\obj\Debug\net6.0\ref\IEnumerable, more of it.dll
