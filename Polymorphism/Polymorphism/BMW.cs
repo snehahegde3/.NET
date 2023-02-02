@@ -16,8 +16,13 @@ namespace Polymorphism
             this.Model = Model;
             Brand = "BMW";
         }
+        
 
-        public override void Repair()
+        // if you dont want a function to be overriden in the child class
+        // the sealed keyword can be used 
+        // it has to be used before the override keyword otherwise, it wont work 
+
+        public sealed override void Repair()
         {
             Console.WriteLine($"BMWs {Model} is being repaired");
         }

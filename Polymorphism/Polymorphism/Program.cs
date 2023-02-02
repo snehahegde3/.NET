@@ -1,4 +1,6 @@
-﻿namespace Polymorphism
+﻿using System.Numerics;
+
+namespace Polymorphism
 {
     internal class Program
     {
@@ -17,6 +19,10 @@
 
             Car bmw1 = new BMW(240, "green", "M7");
             bmw1.ShowDetails();
+
+            M3 m31 = new M3(250, "silver", "M31");
+            m31.Repair();
+
         }
     }
 }
