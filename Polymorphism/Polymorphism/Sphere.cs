@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,3 +27,17 @@ namespace Polymorphism
         }
     }
 }
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Polymorphism
+{
+    internal class Sphere
+    {
+    }
+}
+>>>>>>> 2170fdea099c42cf38602e30ca82b2f6e5228ac6
