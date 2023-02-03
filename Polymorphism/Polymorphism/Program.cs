@@ -1,16 +1,12 @@
 ﻿using System.Numerics;
+using System.Security.Cryptography;
 
 namespace Polymorphism
 {
     internal class Program
     {
-        static void Main(string[] args)
-        {
-            
 
-        }
-
-        public void HasA()
+        public static void HasA()
         {
             Console.WriteLine("Has A");
             var Cars = new List<Car>
@@ -36,11 +32,48 @@ namespace Polymorphism
             Console.WriteLine();
         }
 
-        public void Abstractin()
+        public static void Abstractin()
         {
+
+            Shape cube1 = new Cube(100);
+            Shape sphere1 = new Sphere(10);
+            Shape[] shapes = new Shape[] { cube1, sphere1 };
+
+            //cube1.GetInfo();
+            foreach(var i in shapes)
+            {
+                Console.WriteLine(i.Volume());
+
+                // the as keyword 
+                Cube iceCube = i as Cube; 
+                // we'ere saying we want to have ot as a specific data type
+
+                if(iceCube == null)
+                {
+                    Console.WriteLine("This shape is no cube");
+                }
+
+                if(i is Cube)
+                {
+                    Console.WriteLine("This is a cube");
+                }
+            }
+
+            //storing a Cube in an object and casting it to Cube when assigning to another CUbe 
+            object cube2 = new Cube(8);
+            Cube cube3 = (Cube)cube2;
+
+            Console.WriteLine($"{cube3.Name}, {cube3.Volume()}");
+
 
         }
 
+        static void Main(string[] args)
+        {
+            HasA();
+            Abstractin();
+
+        }
 
     }
 }
