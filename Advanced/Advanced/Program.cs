@@ -169,11 +169,36 @@ namespace Advanced
             //todays day and time
             Console.WriteLine($"Day today is {DateTime.Today.DayOfWeek}, the date is {DateTime.Today.Date}");
             Console.WriteLine($"Tomorrow is ");
+
+            Console.WriteLine($"Days in Feb 2023: {DateTime.DaysInMonth(2023, 2)}");
+
+            Console.Write($" {minsCalculator()} mins");
         }
 
         static public DateTime nextDay(DateTime today)
         {
             return today.AddDays(1);
+        }
+
+        static public int minsCalculator()
+        {
+            int days = -1;
+            Console.WriteLine("Write a date in the format: yyyy mm dd");
+            string strDate1 = Console.ReadLine();
+            Console.WriteLine("Write the other date in the same format");
+            string strDate2 = Console.ReadLine();
+            DateTime outDate1 = new DateTime();
+            DateTime outDate2 = new DateTime();
+            if(DateTime.TryParse(strDate1, out outDate1) && DateTime.TryParse(strDate2, out outDate2))
+            {
+                  days = (int)Math.Abs((outDate2 - outDate1).TotalMinutes);
+                Console.Write($"Minutes between {outDate1.Date} and {outDate2.Date} is ");
+            }
+            else
+            {
+                Console.WriteLine($"Invalid dates");
+            }
+            return days;
         }
 
     }
