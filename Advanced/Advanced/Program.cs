@@ -1,5 +1,6 @@
 ﻿using System.Globalization;
-using System; 
+using System;
+using System.Text.RegularExpressions;
 
 namespace Advanced
 {
@@ -44,6 +45,7 @@ namespace Advanced
             Enums();
             Maths();
             Randoms();
+            RegularExpressions();
             Console.ReadKey();
         }
 
@@ -109,6 +111,26 @@ namespace Advanced
         }
 
         static public void RegularExpressions()
+        {
+            string pattern = @"\d";
+            Regex regx = new Regex(pattern);
+
+            string text = "My number is 34534543";
+
+            MatchCollection matchCollection = Regex.Matches(text, pattern);
+            Console.WriteLine($"{matchCollection.Count} matches found");
+
+
+            foreach(Match hit in matchCollection)
+            {
+                GroupCollection group = hit.Groups;
+                Console.WriteLine($"{group[0].Value} found at  {group[0].Index}");
+            }
+
+            Console.WriteLine();
+        }
+        
+        static public void RegExAssignment()
         {
 
         }
