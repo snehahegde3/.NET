@@ -1,6 +1,7 @@
 ﻿using System.Globalization;
 using System;
 using System.Text.RegularExpressions;
+using System.Reflection.Metadata.Ecma335;
 
 namespace Advanced
 {
@@ -47,6 +48,7 @@ namespace Advanced
             Randoms();
             RegularExpressions();
             RegExAssignment();
+            DatesTimes();
             Console.ReadKey();
         }
 
@@ -149,12 +151,29 @@ namespace Advanced
                 Console.Write(matchedChar);
             }
 
+            Console.WriteLine();
+            Console.WriteLine(); 
+
 
         }
 
         static public void DatesTimes()
         {
+            DateTime sneday = new DateTime(2000, 10, 20, 17, 20, 0);
+            DateTime slokday = new DateTime(1999, 3, 27, 22, 0, 0);
 
+            Console.WriteLine(Math.Floor(Math.Abs((slokday-sneday).TotalDays)));
+
+            DateTime.SpecifyKind(sneday, DateTimeKind.Utc);
+
+            //todays day and time
+            Console.WriteLine($"Day today is {DateTime.Today.DayOfWeek}, the date is {DateTime.Today.Date}");
+            Console.WriteLine($"Tomorrow is ");
+        }
+
+        static public DateTime nextDay(DateTime today)
+        {
+            return today.AddDays(1);
         }
 
     }
