@@ -1,0 +1,9 @@
+Match,Match._regex,Match._textbeg,Match._textpos,Match._textend,Match._textstart,Match._balancing,Match._capcount,Match.Success,Match.Name,Match.Index,Match.Length,Match.Text,Match.Value,Match.ValueSpan
+3,\d,0,14,21,0,False,1,True,0,13,1,"My number is 34534543",3,"Specified method is not supported."
+4,\d,0,15,21,14,False,1,True,0,14,1,"My number is 34534543",4,"Specified method is not supported."
+5,\d,0,16,21,15,False,1,True,0,15,1,"My number is 34534543",5,"Specified method is not supported."
+3,\d,0,17,21,16,False,1,True,0,16,1,"My number is 34534543",3,"Specified method is not supported."
+4,\d,0,18,21,17,False,1,True,0,17,1,"My number is 34534543",4,"Specified method is not supported."
+5,\d,0,19,21,18,False,1,True,0,18,1,"My number is 34534543",5,"Specified method is not supported."
+4,\d,0,20,21,19,False,1,True,0,19,1,"My number is 34534543",4,"Specified method is not supported."
+3,\d,0,21,21,20,False,1,True,0,20,1,"My number is 34534543",3,"Specified method is not supported."

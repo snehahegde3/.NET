@@ -46,6 +46,7 @@ namespace Advanced
             Maths();
             Randoms();
             RegularExpressions();
+            RegExAssignment();
             Console.ReadKey();
         }
 
@@ -131,6 +132,27 @@ namespace Advanced
         }
         
         static public void RegExAssignment()
+        {
+            string pattern = @"\d{2,3}";
+            string text = File.ReadAllText(@"D:\C#\Advanced\input2.txt");
+
+            Regex regex = new Regex(pattern);
+            MatchCollection matchCollection = regex.Matches(text);
+
+
+            foreach (Match hit in matchCollection)
+            {
+                GroupCollection group = hit.Groups;
+                string matchedString = group[0].Value;
+                int matchedInt = Int32.Parse(matchedString);
+                char matchedChar = (char)matchedInt;
+                Console.Write(matchedChar);
+            }
+
+
+        }
+
+        static public void DatesTimes()
         {
 
         }
