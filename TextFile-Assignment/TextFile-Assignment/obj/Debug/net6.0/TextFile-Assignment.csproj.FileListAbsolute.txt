@@ -1,0 +1,15 @@
+D:\C#\TextFile-Assignment\TextFile-Assignment\bin\Debug\net6.0\TextFile-Assignment.exe
+D:\C#\TextFile-Assignment\TextFile-Assignment\bin\Debug\net6.0\TextFile-Assignment.deps.json
+D:\C#\TextFile-Assignment\TextFile-Assignment\bin\Debug\net6.0\TextFile-Assignment.runtimeconfig.json
+D:\C#\TextFile-Assignment\TextFile-Assignment\bin\Debug\net6.0\TextFile-Assignment.dll
+D:\C#\TextFile-Assignment\TextFile-Assignment\bin\Debug\net6.0\TextFile-Assignment.pdb
+D:\C#\TextFile-Assignment\TextFile-Assignment\obj\Debug\net6.0\TextFile-Assignment.csproj.AssemblyReference.cache
+D:\C#\TextFile-Assignment\TextFile-Assignment\obj\Debug\net6.0\TextFile-Assignment.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\TextFile-Assignment\TextFile-Assignment\obj\Debug\net6.0\TextFile-Assignment.AssemblyInfoInputs.cache
+D:\C#\TextFile-Assignment\TextFile-Assignment\obj\Debug\net6.0\TextFile-Assignment.AssemblyInfo.cs
+D:\C#\TextFile-Assignment\TextFile-Assignment\obj\Debug\net6.0\TextFile-Assignment.csproj.CoreCompileInputs.cache
+D:\C#\TextFile-Assignment\TextFile-Assignment\obj\Debug\net6.0\TextFile-Assignment.dll
+D:\C#\TextFile-Assignment\TextFile-Assignment\obj\Debug\net6.0\refint\TextFile-Assignment.dll
+D:\C#\TextFile-Assignment\TextFile-Assignment\obj\Debug\net6.0\TextFile-Assignment.pdb
+D:\C#\TextFile-Assignment\TextFile-Assignment\obj\Debug\net6.0\TextFile-Assignment.genruntimeconfig.cache
+D:\C#\TextFile-Assignment\TextFile-Assignment\obj\Debug\net6.0\ref\TextFile-Assignment.dll
