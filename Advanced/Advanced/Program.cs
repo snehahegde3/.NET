@@ -204,7 +204,7 @@ namespace Advanced
 
         static public void DaysSince()
         {
-            Console.WriteLine("Enter the date you want the days since info on");
+            Console.WriteLine("\nEnter the date you want the days since info on");
             string strDate = Console.ReadLine(); 
             DateTime newDate = new DateTime();
             if(DateTime.TryParse(strDate, out newDate))
