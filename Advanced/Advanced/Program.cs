@@ -173,6 +173,7 @@ namespace Advanced
             Console.WriteLine($"Days in Feb 2023: {DateTime.DaysInMonth(2023, 2)}");
 
             Console.Write($" {minsCalculator()} mins");
+            DaysSince();
         }
 
         static public DateTime nextDay(DateTime today)
@@ -199,6 +200,23 @@ namespace Advanced
                 Console.WriteLine($"Invalid dates");
             }
             return days;
+        }
+
+        static public void DaysSince()
+        {
+            Console.WriteLine("Enter the date you want the days since info on");
+            string strDate = Console.ReadLine(); 
+            DateTime newDate = new DateTime();
+            if(DateTime.TryParse(strDate, out newDate))
+            {
+                TimeSpan daysPassed = DateTime.Now.Subtract(newDate);
+                Console.WriteLine($"Days passed since {newDate} is {daysPassed.Days}");
+            }
+            else
+            {
+                Console.WriteLine("Invalid format");
+            }
+
         }
 
     }
