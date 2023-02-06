@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\z004r3my\\.nuget\\packages\\": {}
+    "C:\\Users\\sneha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\Learning Phase\\Delegates\\Delegates\\Delegates.csproj",
+      "projectUniqueName": "D:\\C#\\Delegates\\Delegates\\Delegates.csproj",
       "projectName": "Delegates",
-      "projectPath": "D:\\C#\\Learning Phase\\Delegates\\Delegates\\Delegates.csproj",
-      "packagesPath": "C:\\Users\\z004r3my\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\Learning Phase\\Delegates\\Delegates\\obj\\",
+      "projectPath": "D:\\C#\\Delegates\\Delegates\\Delegates.csproj",
+      "packagesPath": "C:\\Users\\sneha\\.nuget\\packages\\",
+      "outputPath": "D:\\C#\\Delegates\\Delegates\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\z004r3my\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sneha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System.Diagnostics.Tracing;
+using System.Globalization;
 using System.Reflection.Metadata.Ecma335;
 
 namespace Delegates
@@ -40,6 +41,7 @@ namespace Delegates
             ExistingDelegates();
             OwnDelagates();
             AnonymousFunctions(people);
+            Events();
 
         }
 
@@ -149,6 +151,13 @@ namespace Delegates
             DisplayPeople("22 year olds: ", people, new List<FilterDelegate>() { (p) => p.Age == 22 });
 
         }
+
+        static public void Events()
+        {
+
+        }
+
+        
 
         
     }
