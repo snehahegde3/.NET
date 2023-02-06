@@ -41,7 +41,6 @@ namespace Delegates
             ExistingDelegates();
             OwnDelagates();
             AnonymousFunctions(people);
-            Events();
 
         }
 
@@ -152,10 +151,7 @@ namespace Delegates
 
         }
 
-        static public void Events()
-        {
-
-        }
+        
 
         
 
