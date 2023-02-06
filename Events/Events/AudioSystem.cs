@@ -8,13 +8,18 @@ namespace Events
 {
     internal class AudioSystem
     {
-        public void StartGame()
+        public AudioSystem()
+        {
+            GameEventManager.OnGameStart += StartGame;
+            GameEventManager.OnGameOver += StopGame;
+        }
+        private void StartGame()
         {
             Console.WriteLine("Audio System started");
             Console.WriteLine("Drawing Visuals... ");
         }
 
-        public void StopGame()
+        private void StopGame()
         {
             Console.WriteLine("Audio System stopped.");
         }

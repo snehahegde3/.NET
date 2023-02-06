@@ -8,13 +8,19 @@ namespace Events
 {
     internal class RenderingEngine
     {
-        public void StartGame()
+        public RenderingEngine()
+        {
+            //subscribe to OnGameStart event 
+            GameEventManager.OnGameStart += StartGame;
+            GameEventManager.OnGameOver += StopGame;
+        }
+        private void StartGame()
         {
             Console.WriteLine("Rendering Engine started");
             Console.WriteLine("Drawing Visuals... ");
         }
 
-        public void StopGame() { 
+        private void StopGame() { 
             Console.WriteLine("Rendering Engine stopped."); 
         }
     }

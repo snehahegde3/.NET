@@ -12,14 +12,16 @@ namespace Events
         public Player(string Name)
         {
             this.Name = Name;
+            GameEventManager.OnGameStart += StartGame;
+            GameEventManager.OnGameOver += StopGame;
         }
-        public void StartGame()
+        private void StartGame()
         {
             Console.WriteLine($"Spawning player {Name}"); 
 
         }
 
-        public void StopGame()
+        private void StopGame()
         {
             Console.WriteLine($"Removinf player {Name}");
         }
