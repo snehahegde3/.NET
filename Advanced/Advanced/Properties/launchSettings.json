@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Advanced": {
+      "commandName": "Project",
+      "commandLineArgs": "Sne"
+    }
+  }
+}

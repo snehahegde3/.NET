@@ -1,0 +1,15 @@
+D:\C#\CmdLinePeoject\CmdLinePeoject\bin\Debug\net6.0\CmdLinePeoject.exe
+D:\C#\CmdLinePeoject\CmdLinePeoject\bin\Debug\net6.0\CmdLinePeoject.deps.json
+D:\C#\CmdLinePeoject\CmdLinePeoject\bin\Debug\net6.0\CmdLinePeoject.runtimeconfig.json
+D:\C#\CmdLinePeoject\CmdLinePeoject\bin\Debug\net6.0\CmdLinePeoject.dll
+D:\C#\CmdLinePeoject\CmdLinePeoject\bin\Debug\net6.0\CmdLinePeoject.pdb
+D:\C#\CmdLinePeoject\CmdLinePeoject\obj\Debug\net6.0\CmdLinePeoject.csproj.AssemblyReference.cache
+D:\C#\CmdLinePeoject\CmdLinePeoject\obj\Debug\net6.0\CmdLinePeoject.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\CmdLinePeoject\CmdLinePeoject\obj\Debug\net6.0\CmdLinePeoject.AssemblyInfoInputs.cache
+D:\C#\CmdLinePeoject\CmdLinePeoject\obj\Debug\net6.0\CmdLinePeoject.AssemblyInfo.cs
+D:\C#\CmdLinePeoject\CmdLinePeoject\obj\Debug\net6.0\CmdLinePeoject.csproj.CoreCompileInputs.cache
+D:\C#\CmdLinePeoject\CmdLinePeoject\obj\Debug\net6.0\CmdLinePeoject.dll
+D:\C#\CmdLinePeoject\CmdLinePeoject\obj\Debug\net6.0\refint\CmdLinePeoject.dll
+D:\C#\CmdLinePeoject\CmdLinePeoject\obj\Debug\net6.0\CmdLinePeoject.pdb
+D:\C#\CmdLinePeoject\CmdLinePeoject\obj\Debug\net6.0\CmdLinePeoject.genruntimeconfig.cache
+D:\C#\CmdLinePeoject\CmdLinePeoject\obj\Debug\net6.0\ref\CmdLinePeoject.dll

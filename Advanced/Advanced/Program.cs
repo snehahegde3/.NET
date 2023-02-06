@@ -49,6 +49,7 @@ namespace Advanced
             RegularExpressions();
             RegExAssignment();
             DatesTimes();
+            Console.WriteLine(args[0]);
             Console.ReadKey();
         }
 
