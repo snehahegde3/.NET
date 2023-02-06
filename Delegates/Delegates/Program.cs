@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Reflection.Metadata.Ecma335;
 
 namespace Delegates
 {
@@ -15,7 +16,7 @@ namespace Delegates
                 Age = age;
             }
 
-            
+
 
         }
         static void Main(string[] args)
@@ -84,7 +85,7 @@ namespace Delegates
         {
             bool temp = true;
             Console.WriteLine(title);
-            foreach(Person person in people)
+            foreach (Person person in people)
             {
                 foreach (FilterDelegate filter in filters)
                 {
@@ -109,19 +110,19 @@ namespace Delegates
 
         static bool isNotMinor(Person p)
         {
-            return p.Age > 18; 
+            return p.Age > 18;
         }
 
         static bool lovesBooks(Person p)
         {
-            if(p.Name.Contains("Dot"))
+            if (p.Name.Contains("Dot"))
                 return false;
             return true;
         }
 
         static bool isFamily(Person p)
         {
-            string[] family = new string[] { "Sne", "Slok", "DotDot"};
+            string[] family = new string[] { "Sne", "Slok", "DotDot" };
             return family.Contains(p.Name);
         }
 
@@ -130,14 +131,24 @@ namespace Delegates
             // Anonymous functions can be made by the delegate keyword
             FilterDelegate filter = delegate (Person p)
             {
-                return p.Age>=20 && p.Age<=30;
+                return p.Age >= 20 && p.Age <= 30;
             };
+
+            // here, we're just assigning a delegate an unnamed function
             List<FilterDelegate> temp = new List<FilterDelegate>();
             temp.Add(filter);
             DisplayPeople("Non minors", people, temp);
+            Console.WriteLine();
+            DisplayPeople("Smort", people, new List<FilterDelegate>() { delegate (Person p) { return true; } });
         }
 
-        
+        static public void LambdaFunctions(List<Person> people)
+        {
+            // another way to create anonymous methods
+            DisplayPeople("People with A in their names: ", people, new List<FilterDelegate>() { (p) => { return p.Name.Contains("A"); } });
+            DisplayPeople("22 year olds: ", people, new List<FilterDelegate>() { (p) => p.Age == 22 });
+
+        }
 
         
     }
