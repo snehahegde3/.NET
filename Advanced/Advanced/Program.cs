@@ -174,6 +174,8 @@ namespace Advanced
 
             Console.Write($" {minsCalculator()} mins");
             DaysSince();
+
+            Console.WriteLine();
         }
 
         static public DateTime nextDay(DateTime today)
@@ -219,5 +221,20 @@ namespace Advanced
 
         }
 
+        static public void Nullables()
+        {
+            int? temp = 10;
+            int int_temp;
+
+            //if empty, assign 11
+            //A NULL COALESCING operator
+            int_temp = temp ?? 11;
+            Console.WriteLine("Enter number: ");
+            
+            string strTemp = Console.ReadLine();
+           
+
+        }
     }
+
 }
