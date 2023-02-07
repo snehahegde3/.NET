@@ -1,0 +1,15 @@
+D:\C#\Learning Phase\Threads\Threads\bin\Debug\net6.0\Threads.exe
+D:\C#\Learning Phase\Threads\Threads\bin\Debug\net6.0\Threads.deps.json
+D:\C#\Learning Phase\Threads\Threads\bin\Debug\net6.0\Threads.runtimeconfig.json
+D:\C#\Learning Phase\Threads\Threads\bin\Debug\net6.0\Threads.dll
+D:\C#\Learning Phase\Threads\Threads\bin\Debug\net6.0\Threads.pdb
+D:\C#\Learning Phase\Threads\Threads\obj\Debug\net6.0\Threads.csproj.AssemblyReference.cache
+D:\C#\Learning Phase\Threads\Threads\obj\Debug\net6.0\Threads.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Learning Phase\Threads\Threads\obj\Debug\net6.0\Threads.AssemblyInfoInputs.cache
+D:\C#\Learning Phase\Threads\Threads\obj\Debug\net6.0\Threads.AssemblyInfo.cs
+D:\C#\Learning Phase\Threads\Threads\obj\Debug\net6.0\Threads.csproj.CoreCompileInputs.cache
+D:\C#\Learning Phase\Threads\Threads\obj\Debug\net6.0\Threads.dll
+D:\C#\Learning Phase\Threads\Threads\obj\Debug\net6.0\refint\Threads.dll
+D:\C#\Learning Phase\Threads\Threads\obj\Debug\net6.0\Threads.pdb
+D:\C#\Learning Phase\Threads\Threads\obj\Debug\net6.0\Threads.genruntimeconfig.cache
+D:\C#\Learning Phase\Threads\Threads\obj\Debug\net6.0\ref\Threads.dll
