@@ -10,7 +10,7 @@ namespace Events
     {
         public delegate void GameEvent();
 
-        public static GameEvent OnGameStart, OnGameOver;
+        public static event GameEvent OnGameStart, OnGameOver;
 
         public static void TriggerGameStart()
         {
@@ -19,6 +19,15 @@ namespace Events
                 Console.WriteLine("The game has started... ");
 
                 OnGameStart();
+            }
+
+        }
+
+        public static void TriggerGameOver()
+        {
+            if(OnGameOver != null) { 
+                Console.WriteLine("The game has ended");
+                OnGameOver();
             }
         }
     }
