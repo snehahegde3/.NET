@@ -22,8 +22,14 @@ namespace Threads
             //    Thread.Sleep(12000);
             //    Console.WriteLine("Thread 3");
             //}).Start();
-            
 
+            //ThreadPools(); 
+            Joins();
+
+        }
+
+        public static void ThreadPools()
+        {
             var taskCompletionSource = new TaskCompletionSource<bool>();
             //this tells is the task assigned to it worked out or didnt 
 
@@ -33,7 +39,7 @@ namespace Threads
                 Thread.Sleep(3000);
                 taskCompletionSource.TrySetResult(true);
             })
-            { IsBackground= true };
+            { IsBackground = true };
             // to set background true 
 
             thread.Start();
@@ -47,7 +53,7 @@ namespace Threads
 
             //Enumerable.Range(0, 1000).ToList().ForEach(x =>
             //{
-                
+
             //    new Thread(() =>
             //    {
             //        Console.WriteLine($"Thread number {Thread.CurrentThread.ManagedThreadId} started ");
@@ -75,6 +81,47 @@ namespace Threads
 
             Console.ReadKey();
 
+        
         }
+
+
+        public static void Joins()
+        {
+            Thread thread1 = new Thread(() => { Console.WriteLine("Thread1 started with id:{0} ", Thread.CurrentThread.ManagedThreadId); Thread.Sleep(3000); Console.WriteLine("Callback ending"); });
+            Thread thread2 = new Thread(() => { Console.WriteLine("Thread2 started with id: {0}", Thread.CurrentThread.ManagedThreadId); Thread.Sleep(7000); Console.WriteLine("Callback 2 ending"); });
+            thread1.Start();
+            thread2.Start();
+            if (thread1.Join(3000))
+            {
+                Console.WriteLine("Thread 1 ended");
+            }
+            else
+            {
+                Console.WriteLine("Thread 1 hasnt ended yet");
+            }
+            for (int i = 0; i < 10; i++)
+            {
+                //isAlive returns a value indicating the execution status of the thread 
+                if (thread1.IsAlive)
+                {
+                    Console.WriteLine("thread 1 is still alive"); 
+                }
+                else
+                {
+                    Console.WriteLine("thread 1 has ended");
+                }
+
+            }
+
+            thread2.Join();
+
+
+
+            Console.WriteLine("Joins executed");
+
+
+
+        }
+       
     }
 }
