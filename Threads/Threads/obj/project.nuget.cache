@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s+OFN2XD9vxVr2qy+md3VF2ZgTHJAMeqB+9iwVVjbe4XXlee+a6B4t6gVsHqUqLNyE+FYwTzNXSHXT+hyFRsWA==",
+  "dgSpecHash": "dfQBZXYn95sOrDjio3L8nYzUMTfA4g/bKJ+0fwzYUV+6q/6tmPuDxxa+b+GQlTcjeNDMUCHCpJsI6jJagYGLEA==",
   "success": true,
-  "projectFilePath": "D:\\C#\\Learning Phase\\Threads\\Threads\\Threads.csproj",
+  "projectFilePath": "D:\\C#\\Threads\\Threads\\Threads.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

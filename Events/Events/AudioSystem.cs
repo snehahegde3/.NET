@@ -16,7 +16,7 @@ namespace Events
         private void StartGame()
         {
             Console.WriteLine("Audio System started");
-            Console.WriteLine("Drawing Visuals... ");
+            Console.WriteLine("Playing audio... ");
         }
 
         private void StopGame()

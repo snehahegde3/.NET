@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\Learning Phase\\Threads\\Threads\\Threads.csproj": {}
+    "D:\\C#\\Threads\\Threads\\Threads.csproj": {}
   },
   "projects": {
-    "D:\\C#\\Learning Phase\\Threads\\Threads\\Threads.csproj": {
+    "D:\\C#\\Threads\\Threads\\Threads.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\Learning Phase\\Threads\\Threads\\Threads.csproj",
+        "projectUniqueName": "D:\\C#\\Threads\\Threads\\Threads.csproj",
         "projectName": "Threads",
-        "projectPath": "D:\\C#\\Learning Phase\\Threads\\Threads\\Threads.csproj",
-        "packagesPath": "C:\\Users\\z004r3my\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\Learning Phase\\Threads\\Threads\\obj\\",
+        "projectPath": "D:\\C#\\Threads\\Threads\\Threads.csproj",
+        "packagesPath": "C:\\Users\\sneha\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\Threads\\Threads\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\z004r3my\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sneha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
