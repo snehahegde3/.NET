@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -23,6 +26,18 @@ namespace Tasks_WPF
         public MainWindow()
         {
             InitializeComponent();
+
+        }
+
+        private void MyButton_Click(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine($"Thread nr. {Thread.CurrentThread.ManagedThreadId}");
+            MessageBox.Show("hi");
+            HttpClient client = new HttpClient();
+            string html = client.GetStringAsync("https://google.com").Result;
+            MyButton.Content = "Done";
+            
+
         }
     }
 }

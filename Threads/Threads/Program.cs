@@ -3,7 +3,7 @@ namespace Threads
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             //Console.WriteLine("Threads");
             //Thread.Sleep(10000);
@@ -24,8 +24,9 @@ namespace Threads
             //}).Start();
 
             //ThreadPools(); 
-            Joins();
+            //Joins();
 
+            Console.WriteLine(await MakeTea());
         }
 
         public static void ThreadPools()
@@ -121,6 +122,40 @@ namespace Threads
 
 
 
+        }
+
+        public static async Task<string> MakeTea()
+        {
+            var boilingWater  = BoilWater();
+
+            Console.WriteLine("Take cups out");
+
+            var a = 0; 
+            for(var i = 0; i < 100_000_000; i++)
+            {
+                a += 1;
+            }
+
+            Console.WriteLine("Put tea in cups");
+
+            var water = await boilingWater;
+
+
+
+            return $"pour {water} in cups";
+
+           
+        }
+
+        static public async Task<string> BoilWater()
+        {
+            Console.WriteLine("Start the kettle");
+
+            Console.WriteLine("Waiting for the kettle");
+
+            await Task.Delay(3000);
+
+            return "water";
         }
 
         
