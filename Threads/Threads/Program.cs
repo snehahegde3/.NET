@@ -26,7 +26,7 @@ namespace Threads
             //ThreadPools(); 
             //Joins();
 
-            Console.WriteLine(await MakeTea());
+            await Statemachines();
         }
 
         public static void ThreadPools()
@@ -124,41 +124,37 @@ namespace Threads
 
         }
 
-        public static async Task<string> MakeTea()
+        static public async Task Statemachines()
         {
-            var boilingWater  = BoilWater();
 
-            Console.WriteLine("Take cups out");
+            //When we declare a function async, it implements the IAsyncStateMachine. 
+
+            //Here, each await keyword splits the program. 
+
+            //Each await decalres and calls a MoveNext()
+
+            Console.WriteLine($"1: {Thread.CurrentThread.ManagedThreadId}");
+            var client = new HttpClient();
+            Console.WriteLine($"2: {Thread.CurrentThread.ManagedThreadId}");
+            var task = client.GetStringAsync("https://google.com");
+            Console.WriteLine($"3: {Thread.CurrentThread.ManagedThreadId}");
 
             var a = 0; 
-            for(var i = 0; i < 100_000_000; i++)
+            for(int i = 0; i < 1_000_000; i++)
             {
-                a += 1;
+                a = i + 1;
             }
 
-            Console.WriteLine("Put tea in cups");
+            Console.WriteLine($"4: {Thread.CurrentThread.ManagedThreadId}");
+            var page = await task;
+            Console.WriteLine($"5: {Thread.CurrentThread.ManagedThreadId}");
+            var client1 = new HttpClient();
+            var page2 = await client.GetStringAsync("https://yahoo.com");
+            Console.WriteLine($"6: {Thread.CurrentThread.ManagedThreadId}");
 
-            var water = await boilingWater;
-
-
-
-            return $"pour {water} in cups";
-
-           
         }
 
-        static public async Task<string> BoilWater()
-        {
-            Console.WriteLine("Start the kettle");
 
-            Console.WriteLine("Waiting for the kettle");
 
-            await Task.Delay(3000);
-
-            return "water";
-        }
-
-        
-       
     }
 }
