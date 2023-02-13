@@ -29,15 +29,42 @@ namespace Tasks_WPF
 
         }
 
-        private void MyButton_Click(object sender, RoutedEventArgs e)
+        private async void MyButton_Click(object sender, RoutedEventArgs e)
         {
-            Debug.WriteLine($"Thread nr. {Thread.CurrentThread.ManagedThreadId}");
-            MessageBox.Show("hi");
-            HttpClient client = new HttpClient();
-            string html = client.GetStringAsync("https://google.com").Result;
-            MyButton.Content = "Done";
+            // runs in a different thread
+            Task.Run(() =>
+            {
+                Debug.WriteLine(Thread.CurrentThread.ManagedThreadId);
+                HttpClient client = new HttpClient();
+                var html = client.GetStringAsync("https://github.com/yourkin/fileupload-fastapi/raw/a85a697cab2f887780b3278059a0dd52847d80f3/tests/data/test-5mb.bin").Result;
+
+                // this goes to the thread that responsible for the Button
+                MyButton.Dispatcher.Invoke(() =>
+                {
+                    //so the main, thread: thread 1 that handles the UI, handles this
+                    Debug.WriteLine(Thread.CurrentThread.ManagedThreadId);
+                    MyButton.Content = "Done";
+
+                });
+
+            });
+
             
 
+        }
+
+        private async void MyButton_Click2(object sender, RoutedEventArgs e)
+        {
+            await Task.Run(async () =>
+            {
+                Debug.WriteLine(Thread.CurrentThread.ManagedThreadId);
+                HttpClient client = new HttpClient();
+                var html = client.GetStringAsync("https://github.com/yourkin/fileupload-fastapi/raw/a85a697cab2f887780b3278059a0dd52847d80f3/tests/data/test-5mb.bin").Result;
+
+                
+            });
+            Debug.WriteLine(Thread.CurrentThread.ManagedThreadId);
+            MyButton.Content = "Done Downloading";
         }
     }
 }

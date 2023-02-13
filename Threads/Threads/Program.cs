@@ -148,7 +148,6 @@ namespace Threads
             Console.WriteLine($"4: {Thread.CurrentThread.ManagedThreadId}");
             var page = await task;
             Console.WriteLine($"5: {Thread.CurrentThread.ManagedThreadId}");
-            var client1 = new HttpClient();
             var page2 = await client.GetStringAsync("https://yahoo.com");
             Console.WriteLine($"6: {Thread.CurrentThread.ManagedThreadId}");
 
