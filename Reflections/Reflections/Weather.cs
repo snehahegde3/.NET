@@ -9,9 +9,13 @@ namespace Reflections
     public enum Description { Cloudy, Clear, Sunny, Humid, Raining, Snowing, Stormy, Dry};
     public class Weather
     {
+        [ReportItem(2)]
         public Description Description { get; set; }
+        [ReportItem(1, Format = "dd-MM-yyyy")]
         public DateTime Date { get; set; }
+        [ReportItem(3, Units = "C", Format = "N2")]
         public double Temperature { get; set; }
+        [ReportItem(4, Units = "Inches", Format = "N2")]
         public double Rainfall { get; set; }
 
     }

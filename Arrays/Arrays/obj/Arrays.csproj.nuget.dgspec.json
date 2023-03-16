@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\Arrays\\Arrays\\Arrays.csproj": {}
+    "D:\\Csharp\\Learning\\Arrays\\Arrays\\Arrays.csproj": {}
   },
   "projects": {
-    "D:\\C#\\Arrays\\Arrays\\Arrays.csproj": {
+    "D:\\Csharp\\Learning\\Arrays\\Arrays\\Arrays.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\Arrays\\Arrays\\Arrays.csproj",
+        "projectUniqueName": "D:\\Csharp\\Learning\\Arrays\\Arrays\\Arrays.csproj",
         "projectName": "Arrays",
-        "projectPath": "D:\\C#\\Arrays\\Arrays\\Arrays.csproj",
+        "projectPath": "D:\\Csharp\\Learning\\Arrays\\Arrays\\Arrays.csproj",
         "packagesPath": "C:\\Users\\sneha\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\Arrays\\Arrays\\obj\\",
+        "outputPath": "D:\\Csharp\\Learning\\Arrays\\Arrays\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sneha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,16 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "GitVersion.Core": {
+              "target": "Package",
+              "version": "[5.12.0, )"
+            },
+            "LibGit2Sharp": {
+              "target": "Package",
+              "version": "[0.26.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

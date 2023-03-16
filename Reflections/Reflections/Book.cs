@@ -9,9 +9,13 @@ namespace Reflections
     public enum Rating { Excellent, Good, Okay, Bad, Rubbish};
     public class Book
     {
+        [ReportItem(1)]
         public string Title { get; set; }
+        [ReportItem(2)]
         public string Author { get; set; }
+        [ReportItem(3, Heading = "Date of Publication", Format = "dd-MM-yyyy") ]
         public DateTime DateOfPublication { get; set; }
+        [ReportItem(4)]
         public Rating Rating { get; set; }
 
 

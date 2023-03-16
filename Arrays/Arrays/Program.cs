@@ -10,7 +10,9 @@ namespace Arrays
         
         static void Main(string[] args)
         {
-            
+            var res = GitHelper.GetShortCommitSha();
+            Console.WriteLine($"{res[0]}, {res[1]}");
+            GitHelper.Lib2GitHelper();
             Arrays();
             Console.WriteLine();
             ForEach();

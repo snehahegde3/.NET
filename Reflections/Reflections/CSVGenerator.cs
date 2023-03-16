@@ -41,9 +41,14 @@ namespace Reflections
             var strb = new StringBuilder();
 
             var properties = type.GetProperties(BindingFlags.Public | BindingFlags.Instance);
+
+            var ordered_properties = properties.OrderBy(p => p.GetCustomAttribute<ReportItemAttribute>().ColOrder);
+
+
             foreach (var property in properties)
             {
-                strb.Append(property.Name).Append(",");
+                var attr = property.GetCustomAttribute<ReportItemAttribute>();
+                strb.Append(attr.Heading ?? property.Name).Append(",");
             }
             return strb.ToString()[..^1];
         }
@@ -53,9 +58,15 @@ namespace Reflections
             var strb = new StringBuilder();
 
             var properties = type.GetProperties(BindingFlags.Public | BindingFlags.Instance);
+
+            //sort by Column order before entering into the array so that the order when writing into file is maintained 
+
+            var ordered_properties = properties.OrderBy(p => p.GetCustomAttribute<ReportItemAttribute>().ColOrder);
+
             foreach (var property in properties)
             {
-                strb.Append(CreateItem((dynamic)property.GetValue(item))).Append(",");
+                var attr = property.GetCustomAttribute<ReportItemAttribute>();
+                strb.Append(CreateItem((dynamic)property.GetValue(item)) + attr.Units ?? "").Append(",");
             }
             return strb.ToString()[..^1];
         }
